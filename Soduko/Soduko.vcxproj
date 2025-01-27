@@ -137,11 +137,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
     <ClCompile Include="EventLoop.cpp" />
     <ClCompile Include="SDLhandler.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Board.h" />
     <ClInclude Include="EventLoop.h" />
     <ClInclude Include="SDLhandler.h" />
   </ItemGroup>

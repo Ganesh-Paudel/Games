@@ -1,4 +1,5 @@
 #include "EventLoop.h"
+#include "Board.h"
 #include <SDL.h>
 
 bool EventLoop::initialize() {
@@ -14,7 +15,7 @@ EventLoop::EventLoop() :
 
 void EventLoop::run() {
 
-
+	Board board;
 
 	while (isRunning) {
 		while (SDL_PollEvent(&handler->e)) {
@@ -24,6 +25,7 @@ void EventLoop::run() {
 		}
 
 		handler->clearScreen();
+		board.drawBoard(handler->getRenderer());
 		handler->render();
 
 		SDL_Delay(16);
