@@ -1,16 +1,13 @@
 #pragma once
-#include "SDLhandler.h"
+#include "Render.h"
 
-class EventLoop
-{
+class EventLoop {
 public:
-	EventLoop();
-	~EventLoop();
-	bool initialize();
-	void run();
-	SDLhandler* handler;
+    EventLoop(int width, int height);
+    void Run();
 
 private:
-	bool isRunning;
+    Render renderer;
+    const int screenWidth;
+    const int screenHeight;
 };
-

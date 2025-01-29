@@ -1,14 +1,12 @@
 #include "EventLoop.h"
 
+int main() {
+    const int tileSize = 50;
+    const int screenWidth = tileSize * 9;
+    const int screenHeight = tileSize* 9;
 
-int main(int argc, char* argv[]) {
+    EventLoop gameLoop(screenWidth, screenHeight);
+    gameLoop.Run();
 
-	EventLoop loop;
-	if (loop.initialize()) {
-
-		loop.run();
-
-	}
-
-	return 0;
+    return 0;
 }

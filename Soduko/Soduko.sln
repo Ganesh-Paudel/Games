@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.12.35514.174 d17.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Soduko", "Soduko.vcxproj", "{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Soduko", "Soduko.vcxproj", "{C0220241-B7B1-477A-9F3C-3E5190E7F757}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Debug|x64.ActiveCfg = Debug|x64
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Debug|x64.Build.0 = Debug|x64
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Debug|x86.ActiveCfg = Debug|Win32
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Debug|x86.Build.0 = Debug|Win32
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Release|x64.ActiveCfg = Release|x64
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Release|x64.Build.0 = Release|x64
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Release|x86.ActiveCfg = Release|Win32
-		{878EC7B0-E87C-429B-BBA4-18DEE8981BCC}.Release|x86.Build.0 = Release|Win32
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Debug|x64.ActiveCfg = Debug|x64
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Debug|x64.Build.0 = Debug|x64
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Debug|x86.ActiveCfg = Debug|Win32
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Debug|x86.Build.0 = Debug|Win32
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Release|x64.ActiveCfg = Release|x64
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Release|x64.Build.0 = Release|x64
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Release|x86.ActiveCfg = Release|Win32
+		{C0220241-B7B1-477A-9F3C-3E5190E7F757}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

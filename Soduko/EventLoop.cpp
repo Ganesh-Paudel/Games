@@ -1,38 +1,28 @@
 #include "EventLoop.h"
-#include "Board.h"
-#include <SDL.h>
+#include "EventHandler.h"
+#include "raylib.h"
+#include <iostream>
+#include "Grid.h"
 
-bool EventLoop::initialize() {
-	return handler->init();
+EventLoop::EventLoop(int width, int height)
+    : screenWidth(width), screenHeight(height), renderer(width, height)
+     {
 }
 
-EventLoop::EventLoop() :
-	isRunning(true),
-	handler(new SDLhandler())
-{
+void EventLoop::Run() {
+    InitWindow(screenWidth, screenHeight, "Soduko");
+    SetTargetFPS(60);
+    Grid grid;
+    EventHandler eventHandler;
+    while (!WindowShouldClose()) {
+        // Update
+        eventHandler.HandleInput(grid);
+        // Draw
+        renderer.BeginDraw();
 
-}
+        renderer.DrawBoard(grid.getGrid(), eventHandler.getActiveX(), eventHandler.getActiveY(), eventHandler.getActiveValue());
+        renderer.EndDraw();
+    }
 
-void EventLoop::run() {
-
-	Board board;
-
-	while (isRunning) {
-		while (SDL_PollEvent(&handler->e)) {
-			if (handler->e.type == SDL_QUIT) {
-				isRunning = false;
-			}
-		}
-
-		handler->clearScreen();
-		board.drawBoard(handler->getRenderer());
-		handler->render();
-
-		SDL_Delay(16);
-	}
-}
-
-
-EventLoop::~EventLoop() {
-	delete handler;
+    CloseWindow(); // Close window and OpenGL context
 }
